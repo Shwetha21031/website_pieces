@@ -1,0 +1,76 @@
+body{
+   margin: 0;
+   height: 100vh;
+   background:  rgb(37, 37, 37);
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+
+    //for the lag
+    transition-duration: 200ms ;
+    transition-timing-function: ease-out;
+
+    animation: cursorAnime .5s infinite alternate;
+
+}
+
+.cursor::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -7px;
+    left: -7px;
+    animation: cursorAnime2 .5s infinite alternate;
+}
+
+@keyframes cursorAnime { //pulsating
+
+    from{
+        transform:  scale(1);
+    }
+    to{
+        transform: scale(.7);
+    }
+    
+}
+
+
+
+@keyframes cursorAnime2 { //pulsating
+
+    from{
+        transform:  scale(1);
+    }
+    to{
+        transform: scale(.4);
+    }
+    
+}
+
+@keyframes cursorAnime3 { //pulsating
+
+    0%{
+        transform:  scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    
+}
+.expand{
+    animation: cursorAnime3 .5s forwards;
+    border: 1px solid red;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cursor</title>
+    <link rel="stylesheet" href=".\css\main.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <script>
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        //e - event object
+        cursor.setAttribute("style", "top: " + (e.pageY-10) + "px; left: "+ (e.pageX-10) +"px" );//responsible for following
+        /* Within the callback function, there is a line of code that updates the CSS style of an element with the id "cursor". The cursor variable seems to reference that element. 
+The setAttribute method is used to modify the "style" attribute of the element.
+The e parameter represents the event object, and e.pageY and e.pageX give the current mouse coordinates relative to the document. 
+The code sets the "top" and "left" CSS properties of the "style" attribute to the current mouse coordinates,
+effectively making the element with the "cursor" id follow the mouse cursor on the page. */
+      });
+      document.addEventListener("click",()=>{
+        cursor.classList.add("expand");
+        setTimeout(()=>{
+        cursor.classList.remove("expand");
+      },500)
+      })
+    </script>
+  </body>
+</html>
