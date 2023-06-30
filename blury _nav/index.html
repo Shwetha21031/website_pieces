@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Tools</li>
+                <li>Projects</li>
+            </ul>
+        </div>
+    </body>
+    <style>
+        body{
+            top: 0;
+            left: 0;
+            background-color: rgb(26, 24, 24);
+        }
+        .nav{
+          border-bottom: 1px white solid;
+        }
+
+        ul{
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul li{
+            list-style: none;
+            display: block;
+            transition: 0.5s;
+            letter-spacing: 1px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        ul:hover li{
+            filter: blur(5px);
+        }
+
+        ul li:hover{
+            filter: blur(0);
+            cursor: pointer;
+            letter-spacing: 1px;
+            background: white;
+            border-radius: 15px;
+            color: black;
+        }
+
+    </style>
+    </html>
