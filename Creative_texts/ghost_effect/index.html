@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container"><h1>Hi Hellooooo</h1></div>
+    <div class="ghost"><img src="ghost.png" alt=""></div>
+
+
+
+    
+</body>
+<style>
+    @font-face {
+        font-family: hippie;
+        src: url(./Hippie-Retro.ttf);
+    }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+    body{
+        background: rgb(27, 27, 27);
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        color: aliceblue;
+        font-family: hippie;
+        font-size: 100px;
+        
+        letter-spacing: 0.1em;
+    }
+        .ghost{
+            position: absolute;
+            left: 100%;
+            margin-top: 90px;
+            mix-blend-mode: exclusion;
+            animation: move 8s ease-in-out infinite;
+            
+        }
+
+        @keyframes move{
+            to{
+                left: -100%
+            }
+        }
+
+
+    </style>
+</html>
