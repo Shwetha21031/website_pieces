@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(26, 24, 24);
+    height: 200vh
+}
+
+span{
+    width: 20px;
+    height: 20px;
+    background: url(icons8-star-20.png);
+    background-size: cover;
+    pointer-events: none;
+    position: absolute;
+    animation: star 2s linear forwards;
+}
+
+@keyframes star{
+    0%{
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(50% , 1000%);
+        filter: hue-rotate(360deg);
+        opacity: 0;
+    }
+}
