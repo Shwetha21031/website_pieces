@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container::before{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#ff08f3,#38072c);
+    transform: translate(-490px,-150px);
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(30deg ,#011674,#df3cff);
+    transform: translate(490px,170px);
+}
+
+.container  .ball-1{
+    height: 30px;
+    width: 30px;
+    background: #04bdf5;
+    border-radius: 50%;
+    transform: translate(-250px,235px);
+    position: absolute;
+}
+.container  .ball-2{
+    height: 70px;
+    width: 70px;
+    background: #8808ff;
+    border-radius: 50%;
+    transform: translate(-10px,-220px);
+    position: absolute;
+}
+
+.container  .ball-3{
+    height: 50px;
+    width: 50px;
+    background: #a676e6;
+    border-radius: 50%;
+    transform: translate(150px,250px);
+    position: absolute;
+}
+
+.container .box{
+    height: 50vh;
+    width: 40%;
+    background: rgba(255,255,255,0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+}
+
+.container .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.container .box nav ul li a{
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container .box nav ul li a:hover{
+    color: #fcd200;
+}
+.logo{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.container .box .contains{
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 80%;
+position: relative;
+margin-top: 8%;
+padding-left: 80px;
+
+}
+.container .box .contains .section-1{
+    position: absolute;
+    margin-top: 70px;
+}
+.container .box .contains .section-1 h1{
+    font-size:75px;
+}
+.container .box .contains .section-1 h3{
+    font-size: 35px;
+}
+.container .box .contains .section-1 p{
+    margin-top: 5px;
+}
+.container .box .contains .section-1 .button{
+    margin-top: 50px;
+}
+.container .box .contains .section-1 .button a{
+    padding: 10px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin: 3px;
+}
