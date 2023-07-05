@@ -5,11 +5,19 @@
     color: aliceblue;
     list-style: none;
     font-family: sans-serif;
+    
 }
 
+body{
+background: black;
+}
+.container .box:hover{
+    transform: rotateX(45deg) rotateZ(45deg);
+    transition: ease-in-out 0.4s;
+}
 .container{
     height: 100vh;
-    background: black;
+    
     width: 100%;
     display: flex;
     justify-content: center;
@@ -24,7 +32,7 @@
     width: 300px;
     border-radius: 50%;
     background: linear-gradient(#ff08f3,#38072c);
-    transform: translate(-490px,-150px);
+    transform: translate(-390px,-150px);
 }
 
 .container::after{
@@ -34,7 +42,7 @@
     width: 300px;
     border-radius: 50%;
     background: linear-gradient(30deg ,#011674,#df3cff);
-    transform: translate(490px,170px);
+    transform: translate(420px,70px);
 }
 
 .container  .ball-1{
@@ -76,48 +84,19 @@
     box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
 }
 
-.container .box nav{
-    height: 7%;
-    width: 95%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px auto;
-    padding: 20px;
-}
 
-.container .box nav ul li{
-    display: inline-block;
-    padding: 0 20px;
-}
-.container .box nav ul li a{
-    font-size: 13px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.container .box nav ul li a:hover{
-    color: #fcd200;
-}
-.logo{
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
-    margin-left: 20px;
-}
 .container .box .contains{
-display: flex;
-justify-content: space-between;
+justify-content: center;
 width: 100%;
 height: 80%;
 position: relative;
 margin-top: 8%;
-padding-left: 80px;
-
+display: flex;
 }
 .container .box .contains .section-1{
     position: absolute;
     margin-top: 70px;
+    text-align: center;
 }
 .container .box .contains .section-1 h1{
     font-size:75px;
@@ -136,4 +115,6 @@ padding-left: 80px;
     border: 1px solid white;
     cursor: pointer;
     margin: 3px;
+    border-radius:30px ;
+    text-decoration: none;
 }
