@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    left: 0;
+}
+body{
+    background: rgb(27, 26, 26);  
+}
+.nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: linear-gradient(to right, #7950f2 5%, #f783ac 95%);
+    opacity: 0.5; 
+    position: sticky;
+    top: 0;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    
+}
+.logo{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    padding: 10px;
+}
+
+.hero{
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    color: aliceblue;
+}
+.sec2 , .sec3{
+    background: rgb(190, 189, 189);
+    width: 95%;
+    height: 50vh;
+    opacity: 0.5;
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+    border-radius: 20px;
+}
