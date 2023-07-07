@@ -1,0 +1,93 @@
+body{
+    background: rgb(17, 17, 17);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.type1 p{
+    color: white;
+    overflow: hidden;
+    position: relative;
+    font-size: 30px;
+}
+.type1 p::after{
+content: "developer";
+display: inline-block;
+width: 0ch;
+animation: anime 5s steps(9) infinite;
+
+}
+
+.type1 p::before{
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #dd4d80;
+    position: absolute;
+    right: 0;
+    animation:  blink .4s linear alternate infinite;
+}
+
+@keyframes blink{
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anime {
+    25%{
+        content:" developer";
+        width: 8.5ch;
+       
+    }
+     40%{
+        width: 0ch;
+     }
+
+    75%{
+        content: " designer";
+        width: 7.5ch;
+         
+        
+    }
+    90%{
+        width: 0ch;
+    }
+}
+
+
+
+/* type2  */
+.type2{
+    display: inline-block;
+}
+.text{
+    color: aliceblue;
+    font-size: 2em;
+    font-family: monospace;
+    letter-spacing: 5px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(15) infinite, cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0}
+}
+
+/* type3  */
+.type3{
+    color: aliceblue;
+}
+.type3 span{
+    color: blueviolet;
+}
