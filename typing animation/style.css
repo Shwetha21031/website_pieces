@@ -2,8 +2,8 @@ body{
     background: rgb(17, 17, 17);
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -87,7 +87,9 @@ animation: anime 5s steps(9) infinite;
 /* type3  */
 .type3{
     color: aliceblue;
+    
 }
 .type3 span{
     color: blueviolet;
+
 }
