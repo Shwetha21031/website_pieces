@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  color: white;
+  font-size: 16px;
+  overflow-y: hidden;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+.nav{
+    height: 10vh;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+} 
+.nav-prt2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(66, 67, 68); */
+    width: 65%;
+    
+}
+.nav h1{
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav h1 i{
+    margin-right: 10px;
+}
+.nav i{
+    font-size: 1.5vw;
+}
+.nav h5{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.nav img{
+    height: 2.5vw;
+}
+.line{
+    width: 6vw;
+    height: 1px;
+    background-color: rgb(255, 0, 0);
+}
+.search{
+    display: flex;
+}
+.search h1{
+   margin-left: 1vw;
+   font-size: 1vw;
+   
+}
+.content{
+    height: 90vh;
+    /* background: aliceblue; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    background-color: black ;
+    padding: 20vh 15vh ;
+}
+.right{
+    width: 35%;
+    height: 100%;
+    background: #000000;
+    padding: 20vw 3vw ;
+}
+.center{
+    width: 30%;
+    height: 100%;
+    /* background: #ff0101; */
+    padding-top: 5%;
+}
+.left h1{
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 3vw;
+    margin-bottom: 3vw;
+}
+.left h1 span{
+    color: red;
+    font-weight: 600;
+    font-size: 3vw;
+}
+.left p{
+    font-size: 1.2vw;
+    margin-bottom: 30px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
+.left button{
+    background-color: red;
+    padding: 1vw 2vw;
+    border-radius: 3vw;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.left button i{
+    margin-left: 5px;
+}
+.ri-heart-line{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 2vw;
+    color: red; 
+}
+.center-bg{
+     width: 100%;
+     height: 90%;
+     /* background-color: blue; */
+     background: url("./moritz-mentges-2Ex78BL6DCY-unsplash.jpg");
+     filter: contrast(2.5) blur(3px);
+     background-size: 650%;
+     background-position:  50%;
+     border-radius: 50% 50% 0 0;
+}
+.content>img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-30%) scale(2.7);
+    top: 11vw;
+    z-index: 1;
+}
+.right-elems{
+    /* background-color: red; */
+    width: 60%;
+    margin-left: 3vw;
+
+}
+.elem1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
+    border-bottom: 1px solid white;
+    margin-bottom: 1vw;
+    opacity: 0.4;
+}
+.elem1 h1{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.elem1 i{
+    font-size: 1.5vw;
+}
+.elem2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
+    border-bottom: 1px solid white;
+    margin-bottom: 1vw;
+    opacity: 0.4;
+}
+.elem2 h1{
+    font-size: 1.5vw;
+    font-weight: 600;
+ 
+}
+.elem2 i{
+    font-size: 1.5vw;
+
+}
+.elem3 h1{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.elem3 p{
+    padding: 0.3vw;
+    font-size: 1vw;
+}
